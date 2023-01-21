@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Site URL]()
+- Live Site URL: [Live Site URL](https://hassanakhtar8.github.io/testimonials-grid-section-main/)
 
 
 ### Built with
