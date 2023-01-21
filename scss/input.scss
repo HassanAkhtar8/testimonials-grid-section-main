@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    //font-family: u.$font;
+    font-family: u.$font;
 }
 main{
     display: grid;
@@ -27,7 +27,7 @@ main{
                 margin-bottom: 1rem;
                 color: u.$white;
                 line-height: 1.5rem;
-                //font-size: 600;
+                font-size: 600;
             }
             p {
                 color: u.$lpa;
@@ -37,7 +37,7 @@ main{
                 display: flex;
                 h1 {
                     color: u.$lg;
-                    //font-size: 500;
+                    font-size: 500;
                 }
                 p {
                     color: u.$lha;
