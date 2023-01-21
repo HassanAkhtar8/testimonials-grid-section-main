@@ -1,0 +1,129 @@
+@forward 'global';
+@use "util" as u;
+body{
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: u.$lgb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //font-family: u.$font;
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    'Daniel'
+    'Jonathan'
+    'Jeanette'
+    'Patrick'
+    'Kira';
+    gap: 1.5rem;
+    width: min(95%, 70em);
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+    .testimony {
+        h2 {
+                margin-bottom: 1rem;
+                color: u.$white;
+                line-height: 1.5rem;
+                //font-size: 600;
+            }
+            p {
+                color: u.$lpa;
+                line-height: 1.2rem;
+            }
+        .profile {
+                display: flex;
+                h1 {
+                    color: u.$lg;
+                    //font-size: 500;
+                }
+                p {
+                    color: u.$lha;
+                }
+                .dp {
+                    border-radius: 50%;
+                    width: 2rem;
+                    margin-right: 1rem;
+                }
+                margin-bottom: 1rem;
+            }
+        border-radius: 0.5rem;
+        margin:0 1rem 0 1rem;
+       // margin: 1rem;
+        //margin-bottom: 0;
+        //margin-top: 0;
+        padding: 1rem;
+        }
+
+    .testimony:nth-child(1) {
+        grid-area: Daniel;
+        background-color: u.$mv;
+        }
+
+    .testimony:nth-child(2) {
+        grid-area: Jonathan;
+        background-color: u.$vdgb;
+        }
+
+    .testimony:nth-child(3) {
+        grid-area: Jeanette;
+        background-color: u.$white;
+        p {
+                color: u.$vdgbaa;
+            }
+        
+            h2 {
+                color: u.$vdgb;
+            }
+        
+            .profile {
+                h1 {
+                    color: u.$vdgb;
+                }
+        
+                p {
+                    color: u.$vdgba;
+                }
+            }
+        }
+
+    .testimony:nth-child(4) {
+        grid-area: Patrick;
+        background-color: u.$vdbb;
+        }
+
+        .testimony:nth-child(5) {
+            grid-area: Kira;
+            background-color: u.$white;
+            p{
+                color: u.$vdgbaa;
+            }
+            h2{
+                color: u.$vdgb;
+            }
+            .profile{
+                h1{
+                    color: u.$vdgb;
+                }
+                p{
+                    color: u.$vdgba;
+                }
+            }
+        }
+
+}
+@media screen and(min-width:45em){
+    main{
+        margin: 2rem;
+        .testimony{
+            margin: 0;
+        }
+        //grid-auto-columns: auto;
+        grid-template-areas: 
+        'Daniel Daniel Jonathan Kira'
+        'Jeanette Patrick Patrick Kira';
+    }
+}
+
